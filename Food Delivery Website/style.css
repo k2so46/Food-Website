@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Navbar */
+#navbar{
+    height: 15vh;
+    width: 100vw;
+    background-color: rgb(211, 223, 225);
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo img{
+    width: 44px;
+    margin: 2px 20px;
+}
+
+#navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    /* gap: 15px; */
+}
+/* .list{
+} */
+
+.list a{
+    padding: 3px 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.list a:hover{
+    background-color: #000;
+    border-radius: 10px;
+    color: white;
+}
+
+
+/* Home */
+#home{
+    height: 85vh;
+    background-color: lightblue;
+    background: url('images/bgLand.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 10px; */
+}
+
+#home h1{
+    color: white;
+    margin: 5px;
+}
+#home p{
+    color: white;
+    margin: 5px;
+       
+}
+
+#home button{
+    margin: 5px;
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: brown;
+    padding: 0px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Services Tab */
+#services{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+#services h1{
+    height: 20%;
+    color: brown;
+}
+.serviceContainer{
+    height: 80%;
+    background-color: rgb(235, 165, 165);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.serviceInside{
+    background-color:rgb(255, 143, 143) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 80%;
+    border-radius: 28px;
+    border: 5px solid black;
+    
+}
+.img{
+    height: 150px;
+    /* margin: 50px; */
+    /* padding: 30px; */
+}
+
+
+.contact{
+    height: auto;
+}
+
+.contact h1{
+    text-align: center;
+    background-color: lightblue;
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.form input{
+    width: 40%;
+    height: 25px;
+    margin: 10px 0;
+    padding: 4px 2px;
+    border: 3px solid black;
+    border-radius: 13px;
+}
+.form button{
+    margin: 5px 2px;
+    padding: 13px 25px;
+    background-color: lightblue;
+    border: 3px solid blue;
+    border-radius: 8px;
+    font-weight: 900;
+}
+
+.form button:hover{
+    background-color: rgb(218, 228, 237);
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    background-color: bisque;
+    
+}
+footer p{
+    text-align: center;
+
+}
+/* Utils */
+.text-centre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media screen and (max-width:600px) {
+ .serviceContainer{
+    flex-direction: column;
+    width: 80%;
+    overflow: hidden;
+}   
+}
